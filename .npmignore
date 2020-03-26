@@ -2,3 +2,5 @@
 .prettierrc
 .vscode
 .storybook
+stories
+rollup

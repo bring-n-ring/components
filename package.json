@@ -1,11 +1,15 @@
 {
-  "name": "bring-n-ring-components",
+  "name": "@bring-n-ring/components",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "module": "./bundle/esm/lib.js",
+  "main": "./bundle/cjs/lib.js",
+  "types": "./components/index.ts",
   "scripts": {
+    "prepublishOnly": "rm -rf ./bundle && npm run bundle",
     "start": "start-storybook",
-    "build": "build-storybook -c .storybook -o dist"
+    "build": "build-storybook -c .storybook -o dist",
+    "bundle": "rollup -c ./rollup/config.esm.js && rollup -c ./rollup/config.cjs.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +21,13 @@
     "@types/node": "^12.12.31",
     "babel-loader": "^8.1.0",
     "fork-ts-checker-webpack-plugin": "^4.1.1",
+    "rollup": "^2.2.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "rollup-pluginutils": "^2.8.2",
     "ts-loader": "^6.2.2",
+    "tslib": "^1.11.1",
     "typescript": "^3.8.3"
   },
   "dependencies": {
