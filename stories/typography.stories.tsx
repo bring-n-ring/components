@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react'
 import React from 'react'
 
 import { Spacer, Typography } from '../components'
-import { IonLink } from '@ionic/react'
+import { IonRouterLink } from '@ionic/react'
 storiesOf('Elements / Typography', module).add('Headings', () => (
   <>
     <Spacer type="within" multiply={5}>
@@ -39,9 +39,9 @@ storiesOf('Elements / Typography', module).add('Headings', () => (
         Heading 1
       </Typography>
       <Typography color="background">
-        <IonLink href="https://example.org" color="secondary">
+        <IonRouterLink href="https://example.org" color="secondary">
           Lorem ipsum dolor sit
-        </IonLink>{' '}
+        </IonRouterLink>
         amet, consectetur adipiscing elit. Donec accumsan fermentum dignissim.
         Fusce maximus sed urna at porttitor. In eu sapien varius, rutrum tellus
         nec, feugiat nulla.
