@@ -4,6 +4,6 @@ module.exports = {
   'components/ion-label': 'components/ion-label/ion-label.tsx',
   'components/radio': 'components/radio/radio',
   'components/spacer': 'components/spacer/spacer',
-  'components/typography': 'components/spacer/spacer',
+  'components/typography': 'components/typography/typography',
   lib: 'components/index.ts'
 }

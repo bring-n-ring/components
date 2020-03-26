@@ -2,11 +2,12 @@
   "name": "@bring-n-ring/components",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "module": "./bundle/esm/lib.js",
+  "main": "./bundle/cjs/lib.js",
   "scripts": {
     "start": "start-storybook",
     "build": "build-storybook -c .storybook -o dist",
-    "bundle:esm": "rollup -c ./rollup/config.esm.js"
+    "bundle": "rollup -c ./rollup/config.esm.js && rollup -c ./rollup/config.cjs.js"
   },
   "keywords": [],
   "author": "",
