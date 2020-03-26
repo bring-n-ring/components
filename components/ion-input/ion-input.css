@@ -1,0 +1,8 @@
+.md ion-input {
+  border: 1px solid var(--color-foreground);
+  border-radius: calc(var(--base-spacing) * 2);
+}
+.md ion-input.hasError {
+  border: 1px solid var(--color-danger);
+  border-radius: calc(var(--base-spacing) * 2);
+}

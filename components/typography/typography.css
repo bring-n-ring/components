@@ -1,0 +1,52 @@
+.customTypography {
+  font-family: var(--font-family-main);
+  font-size: calc(var(--base-spacing) * 2.5);
+}
+.customTypography.onDark {
+  color: var(--color-background);
+}
+
+.customTypography a {
+  color: var(--color-tertiary);
+}
+
+.customTypography.onDark a {
+  color: var(--color-secondary);
+}
+
+.h1.customTypography {
+  font-size: calc(var(--base-spacing) * 6);
+}
+.h2.customTypography {
+  font-size: calc(var(--base-spacing) * 4);
+}
+
+.h3.customTypography,
+.h4.customTypography {
+  font-size: calc(var(--base-spacing) * 3);
+}
+
+.h4.customTypography {
+  font-weight: 700;
+}
+.h5.customTypography {
+  font-weight: 700;
+}
+
+.h4.customTypography,
+.h5.customTypography,
+.h6.customTypography,
+.p.customTypography,
+.span.customTypography,
+.small.customTypography,
+.fineprint.customTypography {
+  font-family: var(--font-family-text);
+}
+
+.small.customTypography {
+  font-size: calc(var(--base-spacing) * 2);
+}
+
+.fineprint.customTypography {
+  font-size: calc(var(--base-spacing) * 1.5);
+}

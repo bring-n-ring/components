@@ -1,0 +1,38 @@
+.customRadio {
+  position: relative;
+}
+.customRadio span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: calc(var(--base-spacing) * 4);
+  height: calc(var(--base-spacing) * 4);
+  border-radius: 50%;
+  border: 1px solid var(--color-foreground);
+  content: '';
+}
+.customRadio span::after {
+  position: absolute;
+  left: calc(var(--base-spacing) / 1.5);
+  top: calc(var(--base-spacing) / 1.5);
+  display: inline-block;
+  width: calc(var(--base-spacing) * 3);
+  height: calc(var(--base-spacing) * 3);
+  background: var(--color-primary);
+  border-radius: 50%;
+  content: '';
+  transform: scale(0);
+  transition: all 0.2s;
+}
+.customRadio input:checked ~ span::after {
+  transform: scale(1);
+}
+.customRadio input {
+  visibility: hidden;
+}
+.customRadio {
+  display: inline-block;
+  line-height: 1.5;
+  padding-left: calc(var(--base-spacing) * 6);
+}

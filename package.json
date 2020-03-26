@@ -1,0 +1,26 @@
+{
+  "name": "bring-n-ring-components",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook",
+    "build": "build-storybook -c .storybook -o dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "WTFPL",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/preset-typescript": "^2.1.0",
+    "@storybook/react": "^5.3.17",
+    "@types/node": "^12.12.31",
+    "babel-loader": "^8.1.0",
+    "fork-ts-checker-webpack-plugin": "^4.1.1",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@ionic/react": "5.0.5"
+  }
+}

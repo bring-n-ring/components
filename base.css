@@ -1,0 +1,44 @@
+:root {
+  /* colors */
+  --color-emerald: #4dcb8b;
+  --color-burham-green: #22463c;
+  --color-peach: #f9dab0;
+  --color-whisper-white: #faf8f7;
+  --color-white: #faf8f7;
+  --color-suva-gray: #8e8e8e;
+  --color-orka-black: #2b251e;
+  --color-nero-black: #272727;
+  --color-burnt-sienna-red: #e85e4a;
+
+  /* variables */
+  --color-primary: var(--color-emerald);
+  --color-secondary: var(--color-peach);
+  --color-tertiary: var(--color-te-papa-green);
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-nero-black);
+  --color-danger: var(--color-burnt-sienna-red);
+
+  /*
+    spacing to be ussed with calc
+    margin-top: calc(var(--base-spacing * 2);
+  */
+  --base-spacing: 6px;
+
+  /* Fonts */
+  --font-family-main: 'Baloo Tamma 2', sans-serif;
+  --font-family-text: 'Open Sans', sans-serif;
+
+  /* ionic */
+  --ion-font-family: var(--font-family-main);
+
+  --ion-color-primary: var(--color-primary);
+
+  --ion-color-secondary: var(--color-secondary);
+
+  --ion-color-tertiary: var(--color-tertiary);
+
+  --ion-color-inverse: var(--color-background);
+
+  --ion-padding: var(--base-spacing);
+  --ion-margin: var(--base-spacing);
+}

@@ -1,0 +1,47 @@
+/* remove some materialish stuff */
+.md.button {
+  text-transform: none;
+}
+
+/* primary */
+.md ion-button {
+  --box-shadow: none;
+  --color-hover: var(--color-background);
+  --background-hover-opacity: 0;
+  --color: var(--color-foreground);
+  --transition: all 0.2s;
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: transparent;
+}
+
+/* primary active */
+.md ion-button:active,
+.md ion-button:focus {
+  --border-color: var(--color-foreground);
+}
+/* primary onDark active */
+.md ion-button.onDark:active,
+.md ion-button.onDark:focus {
+  --border-color: var(--color-background);
+}
+
+/* inverse */
+.md ion-button.ion-color-inverse {
+  --color: var(--color-foreground);
+  --color-hover: var(--color-primary);
+  --background-hover-opacity: 0;
+  --transition: all 0.2s;
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: var(--color-primary);
+}
+/* inverse */
+.md ion-button.ion-color-inverse.onDark {
+  --color: var(--color-background);
+}
+/* inverse   */
+.md ion-button:active,
+.md ion-button:focus {
+  --border-color: var(--color-tertiary);
+}
