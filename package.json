@@ -4,7 +4,9 @@
   "description": "",
   "module": "./bundle/esm/lib.js",
   "main": "./bundle/cjs/lib.js",
+  "types": "./components/index.ts",
   "scripts": {
+    "prepublishOnly": "rm -rf ./bundle && npm run bundle",
     "start": "start-storybook",
     "build": "build-storybook -c .storybook -o dist",
     "bundle": "rollup -c ./rollup/config.esm.js && rollup -c ./rollup/config.cjs.js"
