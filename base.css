@@ -19,7 +19,7 @@
   --color-danger: var(--color-burnt-sienna-red);
 
   /*
-    spacing to be ussed with calc
+    spacing to be used with calc
     margin-top: calc(var(--base-spacing * 2);
   */
   --base-spacing: 6px;
