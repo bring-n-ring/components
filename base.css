@@ -39,6 +39,10 @@
 
   --ion-color-inverse: var(--color-background);
 
+  --ion-color-background: var(--color-background);
+
+  --ion-text-color: var(--color-foreground);
+
   --ion-padding: var(--base-spacing);
 
   --ion-margin: var(--base-spacing);

@@ -14,22 +14,13 @@ export const Typography: FC<TypographyProps> = ({
   children,
   className = '',
   color = 'foreground',
-  style = {},
   ...rest
 }) => {
   const computedElem = size !== 'small' && size !== 'fineprint' ? size : 'p'
   const Elem = !elem ? computedElem : elem
-  const styles =
-    typeof window !== 'undefined'
-      ? getComputedStyle(document.documentElement)
-      : null
-  const colorValue = styles
-    ? styles.getPropertyValue(`--color-${color}`)
-    : '#000'
   return (
     <Elem
-      style={{ ...style, color: colorValue }}
-      className={`${size} customTypography ${className}`.trim()}
+      className={`${size} customTypography ${color} ${className}`.trim()}
       {...rest}
     >
       {children}

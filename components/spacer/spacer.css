@@ -1,0 +1,61 @@
+.around1 {
+  margin: calc(var(--base-spacing) * 1);
+}
+.around2 {
+  margin: calc(var(--base-spacing) * 2);
+}
+.around3 {
+  margin: calc(var(--base-spacing) * 3);
+}
+.around4 {
+  margin: calc(var(--base-spacing) * 4);
+}
+.around5 {
+  margin: calc(var(--base-spacing) * 5);
+}
+.around6 {
+  margin: calc(var(--base-spacing) * 6);
+}
+.around7 {
+  margin: calc(var(--base-spacing) * 7);
+}
+.around8 {
+  margin: calc(var(--base-spacing) * 8);
+}
+.around9 {
+  margin: calc(var(--base-spacing) * 9);
+}
+.around10 {
+  margin: calc(var(--base-spacing) * 10);
+}
+
+.within1 {
+  padding: calc(var(--base-spacing) * 1);
+}
+.within2 {
+  padding: calc(var(--base-spacing) * 2);
+}
+.within3 {
+  padding: calc(var(--base-spacing) * 3);
+}
+.within4 {
+  padding: calc(var(--base-spacing) * 4);
+}
+.within5 {
+  padding: calc(var(--base-spacing) * 5);
+}
+.within6 {
+  padding: calc(var(--base-spacing) * 6);
+}
+.within7 {
+  padding: calc(var(--base-spacing) * 7);
+}
+.within8 {
+  padding: calc(var(--base-spacing) * 8);
+}
+.within9 {
+  padding: calc(var(--base-spacing) * 9);
+}
+.within10 {
+  padding: calc(var(--base-spacing) * 10);
+}

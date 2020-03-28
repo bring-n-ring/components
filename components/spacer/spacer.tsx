@@ -1,31 +1,25 @@
 import React, { FC } from 'react'
 
 type SpacerProps = {
-  multiply?: number
+  multiply?: 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+
   cssProperty?: string
   type?: 'within' | 'around'
 } & React.HTMLAttributes<HTMLDivElement>
+import './spacer.css'
 
 export const Spacer: FC<SpacerProps> = ({
   multiply = 1,
-  cssProperty = '--base-spacing',
   type = 'around',
   children,
-  style = {},
+  className = '',
   ...rest
 }) => {
-  const styles =
-    typeof window !== 'undefined'
-      ? getComputedStyle(document.documentElement)
-      : null
-  const spacing = styles ? parseInt(styles.getPropertyValue(cssProperty)) : 0
   if (type === 'around') {
-    return (
-      <div style={{ ...style, margin: `${spacing * multiply}px` }} {...rest} />
-    )
+    return <div className={`around${multiply} ${className}`} {...rest} />
   }
   return (
-    <div style={{ ...style, padding: `${spacing * multiply}px` }} {...rest}>
+    <div className={`within${multiply} ${className}`} {...rest}>
       {children}
     </div>
   )
