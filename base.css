@@ -24,6 +24,12 @@
   */
   --base-spacing: 6px;
 
+  /* media queris, for reference */
+  --media-size-md: 767px;
+  --media-size-lg: 1023px;
+  --media-size-xl: 1200px;
+  --media-size-xxl: 1430px;
+
   /* Fonts */
   --font-family-main: 'Baloo Tamma 2', sans-serif;
   --font-family-text: 'Open Sans', sans-serif;
