@@ -1,6 +1,6 @@
 {
   "name": "@bring-n-ring/components",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "module": "./bundle/esm/lib.js",
   "main": "./bundle/cjs/lib.js",

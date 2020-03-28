@@ -14,8 +14,11 @@ export const Spacer: FC<SpacerProps> = ({
   style = {},
   ...rest
 }) => {
-  let styles = getComputedStyle(document.documentElement)
-  let spacing = parseInt(styles.getPropertyValue(cssProperty))
+  const styles =
+    typeof window !== 'undefined'
+      ? getComputedStyle(document.documentElement)
+      : null
+  const spacing = styles ? parseInt(styles.getPropertyValue(cssProperty)) : 0
   if (type === 'around') {
     return (
       <div style={{ ...style, margin: `${spacing * multiply}px` }} {...rest} />
