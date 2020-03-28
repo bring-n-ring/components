@@ -1,6 +1,6 @@
 {
   "name": "@bring-n-ring/components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "module": "./bundle/esm/lib.js",
   "main": "./bundle/cjs/lib.js",
@@ -15,6 +15,7 @@
   "author": "",
   "license": "WTFPL",
   "devDependencies": {
+    "@ionic/react": "5.0.7",
     "@babel/core": "^7.9.0",
     "@storybook/preset-typescript": "^2.1.0",
     "@storybook/react": "^5.3.17",
@@ -30,7 +31,5 @@
     "tslib": "^1.11.1",
     "typescript": "^3.8.3"
   },
-  "dependencies": {
-    "@ionic/react": "5.0.5"
-  }
+  "dependencies": {}
 }
