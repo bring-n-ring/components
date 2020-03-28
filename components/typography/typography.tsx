@@ -19,8 +19,13 @@ export const Typography: FC<TypographyProps> = ({
 }) => {
   const computedElem = size !== 'small' && size !== 'fineprint' ? size : 'p'
   const Elem = !elem ? computedElem : elem
-  let styles = getComputedStyle(document.documentElement)
-  let colorValue = styles.getPropertyValue(`--color-${color}`)
+  const styles =
+    typeof window !== 'undefined'
+      ? getComputedStyle(document.documentElement)
+      : null
+  const colorValue = styles
+    ? styles.getPropertyValue(`--color-${color}`)
+    : '#000'
   return (
     <Elem
       style={{ ...style, color: colorValue }}
