@@ -131,6 +131,12 @@
   }
 }
 
+@media (min-width: 1430px) {
+  .p.customTypography {
+    font-size: calc(var(--base-spacing) * 3.5);
+  }
+}
+
 .h4.customTypography {
   font-weight: 700;
 }
